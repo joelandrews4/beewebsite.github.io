@@ -1,8 +1,8 @@
-function submitContact(event){
+$("#contactForm").submit(function(event){
     // cancels the form submission
-    //event.preventDefault();
+    event.preventDefault();
     submitForm();
-}
+});
 
 function submitForm(){
      // Initiate Variables With Form Content
