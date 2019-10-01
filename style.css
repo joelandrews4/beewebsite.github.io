@@ -1,6 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+
+    background: #eecda3;
+    background: -webkit-linear-gradient(to bottom right, #eecda3, #edef62);
+    background: linear-gradient(to bottom right, #eecda3, #edef62);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -60,7 +64,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.gallery-container, .contact-form-container{
+.gallery-container, .container-contact1, .shop-container{
     margin-top: 80px;
     padding-left: 10%;
     padding-right: 10%;
@@ -212,3 +216,22 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+.container-contact1 {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fa-trash{
+      background-image: url(./images/icons/trash-solid.svg)
+  }
+
+  .item-price::before, .postage-and-packaging::before, .sub-total-value::before{
+      content:"£";
+      font-weight: bold;
+  }
