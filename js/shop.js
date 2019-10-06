@@ -17,12 +17,24 @@ function refreshShop() {
         //calculate sub-total for 1 item.
         let price = items.item(0).childNodes[1].textContent;
         let quantity = items.item(0).nextElementSibling.childNodes[1].value;
+        if (quantity > 50){
+            items.item(0).nextElementSibling.childNodes[1].value = 50;
+        }
+        if (quantity < 0){
+            items.item(0).nextElementSibling.childNodes[1].value = 0;
+        }
         subtotal += parseFloat(price) * parseInt(quantity);
     } else {
         for (var i = 0; i < items.length; i++) {
             //calculate sub-total for all items
             let price = items[i].childNodes[1].textContent;
             let quantity = items[i].nextElementSibling.childNodes[1].value;
+            if (quantity > 50){
+                items[i].nextElementSibling.childNodes[1].value = 50;
+            }
+            if (quantity < 0){
+                items[i].nextElementSibling.childNodes[1].value = 0;
+            }
             subtotal += parseFloat(price) * parseInt(quantity);
         }
     }

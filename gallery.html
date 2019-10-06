@@ -7,8 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <title>The Wild Bee</title>
 </head>
 
@@ -46,63 +52,113 @@
 
     <main role="main" class="gallery-container">
 
-        <section class="jumbotron text-center">
-            <div class="jumbotron-container">
-                <h1 class="jumbotron-heading">Gallery</h1>
-                <h3 class="jumbotron-subheading">Take a closer look at our bee-cosystem.</h3>
-            </div>
-        </section>
-
+        <div class="jumbotron-anim-container">
+            <section class="jumbotron text-center">
+                <div class="jumbotron-container">
+                    <h1 class="jumbotron-heading">Gallery</h1>
+                    <h3 class="jumbotron-subheading">Take a closer look at our bee-cosystem.</h3>
+                </div>
+            </section>
+        </div>
         <div>
             <div class="gallery" id="gallery">
 
                 <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./images/gallery-1.jpg" alt="Card image cap">
+                    <a href="./images/gallery-1.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-1.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-2.jpg" alt="Card image cap">
+                    <a href="./images/gallery-2.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-2.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-3.jpg" alt="Card image cap">
+                    <a href="./images/gallery-3.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-3.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./images/gallery-4.jpg" alt="Card image cap">
+                    <a href="./images/gallery-4.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-4.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./images/gallery-5.jpg" alt="Card image cap">
+                    <a href="./images/gallery-5.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-5.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-6.jpg" alt="Card image cap">
+                    <a href="./images/gallery-6.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-6.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-7.jpg" alt="Card image cap">
+                    <a href="./images/gallery-7.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-7.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-8.jpg" alt="Card image cap">
+                    <a href="./images/gallery-8.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-8.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-9.jpg" alt="Card image cap">
+                    <a href="./images/gallery-9.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-9.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-10.jpg" alt="Card image cap">
+                    <a href="./images/gallery-10.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-10.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./images/gallery-11.jpg" alt="Card image cap">
+                    <a href="./images/gallery-11.jpg" data-toggle="lightbox" data-title="Honey Bee"
+                        data-footer="Taken in our garden.">
+                        <img src="./images/gallery-11.jpg" class="img-fluid">
+                    </a>
                 </div>
 
             </div>
         </div>
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2017-2019 The Wild Bee. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
     </main>
+
+    <script src="./js/galleryAnim.js"></script>
+
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
 </body>
 
 </html>
