@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 80px;
     padding-left: 10%;
     padding-right: 10%;
+    opacity: 0%;
 }
 
 .titleText {
@@ -79,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%;
+    opacity: 0%;
 }
 
 .gallery .pics {
@@ -117,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/bees-close-up-honey-53444.jpg");
     background-size: cover;
+    opacity: 0%;
 }
 
 .jumbotron-container {
@@ -157,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-features {
     margin: 0 10% 0 10%;
+    opacity: 0%;
 }
 
 .feature-1 {
