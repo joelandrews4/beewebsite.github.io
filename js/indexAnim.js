@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     window.onload = function () {
+        console.log("Loaded!");
         const carousel = document.querySelector('.top-carousel');
         const containerFeatures = document.querySelector('.container-features');
         const indexMain = document.querySelector('.index-main');
