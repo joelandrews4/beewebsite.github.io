@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10%;
 }
 
+.index-main{
+    opacity: 0;
+}
+
 .top-navigation-container {
     background-color: blue;
     width: 100%;
@@ -67,7 +71,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.gallery-container, .container-contact1, .shop-container {
+.gallery-container{
+    opacity: 0;
+    margin-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-contact1, .shop-container {
     margin-top: 80px;
     padding-left: 10%;
     padding-right: 10%;
@@ -328,4 +339,12 @@ h1, h2, h3, h4, h5, h6 {
     to{
         stroke-dashoffset: 0;
     }
+}
+
+.lds-hive{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
