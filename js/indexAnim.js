@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         tl.fromTo(indexMain, 1, { opacity: 0 }, { opacity: 1 })
             .fromTo(loadingAnim, 1, { opacity: 1 }, { opacity: 0 }, "-=1")
-            .fromTo(carousel, 3, { x: '-10%', opacity: 0 }, { x: '0%', opacity: 1 })
-            .fromTo(containerFeatures, 3, { opacity: 0 }, { opacity: 1}, "-=2");
+            .fromTo(carousel, 2, { x: '-10%', opacity: 0 }, { x: '0%', opacity: 1 , ease: Power2.easeInOut})
+            .fromTo(containerFeatures, 2, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut});
     };
 });
 
