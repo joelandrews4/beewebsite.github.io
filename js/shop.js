@@ -19,9 +19,11 @@ function refreshShop() {
         let quantity = items.item(0).nextElementSibling.childNodes[1].value;
         if (quantity > 50){
             items.item(0).nextElementSibling.childNodes[1].value = 50;
+            quantity = 50;
         }
-        if (quantity < 0){
+        if (quantity < 0 || quantity == ""){
             items.item(0).nextElementSibling.childNodes[1].value = 0;
+            quantity = 0;
         }
         subtotal += parseFloat(price) * parseInt(quantity);
     } else {
@@ -31,9 +33,11 @@ function refreshShop() {
             let quantity = items[i].nextElementSibling.childNodes[1].value;
             if (quantity > 50){
                 items[i].nextElementSibling.childNodes[1].value = 50;
+                quantity = 50;
             }
-            if (quantity < 0){
+            if (quantity < 0  || quantity == ""){
                 items[i].nextElementSibling.childNodes[1].value = 0;
+                quantity = 0;
             }
             subtotal += parseFloat(price) * parseInt(quantity);
         }

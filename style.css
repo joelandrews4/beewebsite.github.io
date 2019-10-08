@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10%;
 }
 
-.index-main{
+.index-main {
     opacity: 0;
 }
 
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.gallery-container{
+.gallery-container {
     opacity: 0;
     margin-top: 80px;
     padding-left: 10%;
@@ -242,6 +242,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media (max-width: 600px){
+    .table td:nth-child(4) {
+        display: none;
+    }
+    .col-lg-12.p-5 {
+        padding: 0rem!important;
+    }
+}
+
 .container-contact1 {
     background: #fff;
     border-radius: 10px;
@@ -335,13 +344,13 @@ h1, h2, h3, h4, h5, h6 {
     animation: line-anim 2s ease forwards 2.7s;
 }
 
-@keyframes line-anim{
-    to{
+@keyframes line-anim {
+    to {
         stroke-dashoffset: 0;
     }
 }
 
-.lds-hive{
+.lds-hive {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -350,54 +359,66 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes loading {
-    0% {opacity: 1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#hex1{
+#hex1 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#hex2{
+
+#hex2 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: -0.25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#hex3{
+
+#hex3 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: -0.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#hex4{
+
+#hex4 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: -0.75s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#hex5{
+
+#hex5 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: -1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#hex6{
+
+#hex6 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: -1.25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#hex7{
+
+#hex7 {
     animation-name: loading;
     animation-duration: 1s;
     animation-delay: -1.5s;
