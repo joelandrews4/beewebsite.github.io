@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const containerFeatures = document.querySelector('.container-features');
         const indexMain = document.querySelector('.index-main');
         const loadingAnim = document.querySelector('.lds-hive');
+        const Logo = document.querySelector('.AnimatedText');
+
+        Logo.id += "Logo";
 
         const tl = new TimelineMax();
 
